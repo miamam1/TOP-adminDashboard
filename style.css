@@ -19,7 +19,7 @@ body {
 
 .pageContainer {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     
 }
 
@@ -31,59 +31,127 @@ body {
     color: white;
     min-height: 100vh;
     max-height: 100vh;
-    grid-template-rows: repeat(12, 1fr);
-    padding: 10%;
-    gap: 70px;
-}
-
-.dashboardtextItemcontainer {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(30, 1fr);
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    row-gap: 15px;
     
 }
-.dashboardtextItemcontainer img {
-    height: 2em;
-    filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(103%) contrast(103%)
-    /* source: https://codepen.io/sosuke/pen/Pjoqqp */
 
+.dashboard img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
 }
 
-
-
-.dashboardtextItemcontainer p {
-    font-size: 2em;
+.dashboard p {
     font-weight: bold;
-    
 }
 
-.dashboardtextLogocontainer {
-    font-size: 1.3rem;
-    
-    
+
+.dashboardLogo {
+  grid-column: 4 / 10;
+  grid-row: 2
 }
-.dashboardtextLogocontainer img{
-    font-size: 2rem;
-    
-    
-}
-.homeToCommunities {
-    grid-row: 2 / 6;
-    display: grid;
+
+.dashboardText {
+    grid-column: 11 / 13;
+    grid-row: 2;
     
     
 }
 
-.settingsToPrivacy {
-    grid-row: 6 / 8;
-    display: grid;
-    gap: 30px;
+.homeLogo {
+    grid-column: 4 / 7;
+    grid-row: 4;
+}
+
+.homeText {
+    grid-column: 11 / 13;
+    grid-row: 4;
+}
+
+.profileLogo {
+    grid-column: 4  / 7;
+    grid-row: 5;
+}
+
+.profileText {
+    grid-column: 11 / 13;
+    grid-row: 5;
+}
+
+.messagesLogo {
+    grid-column: 4 / 7;
+    grid-row: 6;
+
+}
+.messagesText {
+    grid-column: 11 / 13;
+    grid-row: 6;
+}
+
+.historyLogo {
+    grid-column: 4 / 7;
+    grid-row: 7;
+}
+
+.historyText {
+    grid-column: 11 / 13;
+    grid-row: 7;
+}
+
+.tasksLogo {
+    grid-column: 4 / 7;
+    grid-row: 8;
+}
+
+.tasksText {
+    grid-column: 11 / 13;
+    grid-row: 8;
+}
+
+.communitiesLogo {
+    grid-column: 4 / 7;
+    grid-row: 9;
+}
+
+.communitiesText {
+    grid-column: 11 / 13;
+    grid-row: 9;
+}
+
+.settingsLogo {
+    grid-column: 4/7;
+    grid-row: 11;
+}
+
+.settingsText {
+    grid-column: 11/ 13;
+    grid-row: 11;
+}
+
+.supportLogo {
+    grid-column: 4 / 7;
+    grid-row: 12;
+}
+
+.supportText {
+    grid-column: 11 / 13;
+    grid-row: 12;
+}
+
+.privacyLogo {
+    grid-column: 4 / 7;
+    grid-row: 13; 
+}
+
+.privacyText {
+    grid-column: 11 / 13;
+    grid-row: 13;
 }
 
 
-
+/* end of dashboard */
 .homeContainer {
     grid-column: 3 / -1;
     display: grid;
