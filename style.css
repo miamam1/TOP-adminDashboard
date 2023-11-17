@@ -383,11 +383,38 @@ body {
 .announcementsContainer {
     background-color: white;
     box-shadow: -1px 10px 5px -4px rgba(112,111,111,0.44);
-    grid-row: 4;
-    grid-column: 90 / 100;
+    grid-row: 4 / 4;
+    grid-column: 90 / 99;
     border-radius: 20px;
-    
+}
+
+.siteMaintenenceContainer {
+    border-bottom: black solid 1px;
+    margin: 20px;
+    font-size: 0.8rem;
+}
+
+.CommunityContainer {
+    border-bottom: black solid 1px;
+    margin: 20px;
+    font-size: 0.8rem;
+}
+
+.PrivacyContainer {
+    margin: 20px;
+    font-size: 0.8rem;
 }
 
 
+.trendingContainer img {
+    width: 40px;
+   
+}
+
+.trendingContainer {
+    background-color: white;
+    border-radius: 20px;
+    grid-column: 90 / 99;
+    grid-row: 6;
+}
 
