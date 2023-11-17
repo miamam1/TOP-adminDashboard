@@ -1,5 +1,6 @@
 :root {
     --themeColor: #1992d4;
+    --accentColor: #E2E8F0;
 }
 
 * {
@@ -20,9 +21,8 @@ body {
 .pageContainer {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    
 }
-
+/* start of dashboard */
 
 .dashboard {
     background-color: var(--themeColor);
@@ -155,23 +155,157 @@ body {
 .homeContainer {
     grid-column: 3 / -1;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
    
     max-height: 100vh;
 }
 
+/* start of header */
+
 .header {
-    grid-column: 1 / 11;
-    grid-row: 1 / 1;
+    grid-column: 1 / 31;
+    grid-row: 1 / 6;
+    display: grid;
+    grid-template-rows: repeat(100, 1fr);
+    grid-template-columns: repeat(100, 1fr);
 }
 
+.searchLogoWrapper {
+    grid-row: 19;
+    grid-column: 4;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+   
+}
+
+.searchLogoWrapper img {
+    width: 30px;
+    height: 30px;
+}
+
+.searchBar {
+    background-color: var(--accentColor);
+    border: 0;
+    border-radius: 80px;
+    grid-row: 16 / 29;
+    grid-column: 6 / 37;
+    
+}
+
+.notificationsLogoWrapper {
+    grid-row: 19;
+    grid-column: 87;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    
+
+}
+
+.notificationsLogoWrapper img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.profileSmallwrapper {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    grid-row: 15;
+    grid-column: 90;
+}
+
+.profileSmallwrapper img {
+    height: 45px;
+    width: 45px;
+}
+
+.profileName {
+    font-weight: bold;
+    grid-row: 21;
+    grid-column: 93 / 99;
+
+}
+
+
+
+.pfpIntroImgWrapper {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    grid-row: 60 / 60;
+    grid-column: 4;
+
+    
+
+}
+
+.pfpIntroImgWrapper img{
+    width: 75px;
+    height: 75px;
+    
+}
+
+
+
+.Intro {
+    font-weight: bolder;
+    grid-row: 70;
+    grid-column: 8 / 30;
+}
+
+.MorgansIntro {
+    grid-row: 75;
+    grid-column: 8 / 30;
+}
+
+
+.blueButtons {
+    background-color: var(--themeColor);
+    border: 0;
+    border-radius: 80px;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.3em;
+    grid-row: 70 / 76;
+    
+    
+}
+
+.NewBtn {
+    grid-column:  79 / 85;
+}
+
+.UploadBtn {
+    grid-column: 86 / 92;
+}
+
+.ShareBtn {
+    grid-column: 93 / 99;
+}
+
+
+
+/* end of header */
 .maincontent {
-    grid-column: 1 / 11;
-    grid-row: 2 / 11;
+    grid-column: 1 / 31;
+    grid-row: 6 / 31;
+    background-color: var(--accentColor);
 
-    background-color: #e2e8f0;
 }
+
 
 
 
