@@ -169,6 +169,7 @@ body {
     display: grid;
     grid-template-rows: repeat(100, 1fr);
     grid-template-columns: repeat(100, 1fr);
+    box-shadow: 2px 7px 5px 0px rgba(161,161,161,0.75);
 }
 
 .searchLogoWrapper {
@@ -299,14 +300,94 @@ body {
 
 
 /* end of header */
+
+
+/* start of articles */
 .maincontent {
     grid-column: 1 / 31;
     grid-row: 6 / 31;
     background-color: var(--accentColor);
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.titles {
+    font-weight: normal;
+}
+
+.projectsHeadline {
+    grid-column: 2 / 60;
+    grid-row: 3;
+    
+}
+
+.announcementsHeadline {
+    grid-column: 90;
+    grid-row: 3;
+}
+
+.trendingHeadline {
+    grid-row: 5;
+    grid-column: 90;
+}
+
+
+.articlesContainer {
+    grid-column: 2 / 85;
+    grid-row: 4 / 30;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    
+    
+    
+}
+
+.superCoolProject {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 0.7em solid #F0B429;
+    box-shadow: -1px 10px 5px -4px rgba(112,111,111,0.44);
+    padding: 40px;
+    
+    grid-template-columns: repeat(4, 0fr);
+    grid-template-rows: repeat(4, 0fr)
+}
+
+.superCoolProject img {
+    width: 10%;
+    
+}
+
+
+.iconContainer {
+   position: relative;
+   left: 200px;
+   top: 10px;
+   
+
+}
+
+.iconContainer img{ 
+    margin-right: 10px;
 
 }
 
 
+
+.announcementsContainer {
+    background-color: white;
+    box-shadow: -1px 10px 5px -4px rgba(112,111,111,0.44);
+    grid-row: 4;
+    grid-column: 90 / 100;
+    border-radius: 20px;
+    
+}
 
 
 
