@@ -1,6 +1,7 @@
 :root {
     --themeColor: #1992d4;
     --accentColor: #E2E8F0;
+    --descriptionColor: #636363;
 }
 
 * {
@@ -21,6 +22,8 @@ body {
 .pageContainer {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
+    
+    
 }
 /* start of dashboard */
 
@@ -49,16 +52,19 @@ body {
 
 
 .dashboardLogo {
-  grid-column: 4 / 10;
-  grid-row: 2
+  grid-column: 2 / 10;
+  grid-row: 2;
 }
 
 .dashboardText {
-    grid-column: 11 / 13;
+    grid-column: 10 / 13;
     grid-row: 2;
+    font-weight: bold;
+    
     
     
 }
+
 
 .homeLogo {
     grid-column: 4 / 7;
@@ -183,6 +189,10 @@ body {
    
 }
 
+.titles {
+    font-weight: bolder;
+}
+
 .searchLogoWrapper img {
     width: 30px;
     height: 30px;
@@ -192,7 +202,7 @@ body {
     background-color: var(--accentColor);
     border: 0;
     border-radius: 80px;
-    grid-row: 16 / 29;
+    grid-row: 16 / 40;
     grid-column: 6 / 37;
     
 }
@@ -233,8 +243,9 @@ body {
 
 .profileName {
     font-weight: bold;
-    grid-row: 21;
-    grid-column: 93 / 99;
+    grid-row: 21 / 25;
+    grid-column: 93 / 101;
+    
 
 }
 
@@ -247,15 +258,15 @@ body {
     max-width: 100%;
     object-fit: cover;
     grid-row: 60 / 60;
-    grid-column: 4;
+    grid-column: 3;
 
     
 
 }
 
 .pfpIntroImgWrapper img{
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 85px;
     
 }
 
@@ -322,17 +333,20 @@ body {
 .projectsHeadline {
     grid-column: 2 / 60;
     grid-row: 3;
-    
+    font-weight: bold;
 }
 
 .announcementsHeadline {
+    margin-left: 10px;
     grid-column: 90;
     grid-row: 3;
+    font-weight: bold;
 }
 
 .trendingHeadline {
-    grid-row: 5;
+    grid-row: 52;
     grid-column: 90;
+    font-weight: bold;
 }
 
 
@@ -341,7 +355,7 @@ body {
     grid-row: 4 / 30;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 25px;
     
     
@@ -357,6 +371,10 @@ body {
     
     grid-template-columns: repeat(4, 0fr);
     grid-template-rows: repeat(4, 0fr)
+}
+
+.superCoolProject p {
+    color: var(--descriptionColor)
 }
 
 .superCoolProject img {
@@ -383,38 +401,115 @@ body {
 .announcementsContainer {
     background-color: white;
     box-shadow: -1px 10px 5px -4px rgba(112,111,111,0.44);
-    grid-row: 4 / 4;
-    grid-column: 90 / 99;
+    grid-row: 4 / 50;
+    grid-column:  90 / 98;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    
 }
 
+.announcementsContainer div {
+    font-size: 0.7rem;
+    
+}
+.announcementsContainer h4 {
+    font-size: 0.9rem;
+}
+
+.announcementsContainer p {
+    color: var(--descriptionColor);
+}
+
+
+.siteMaintenenceContainer:after, .CommunityContainer::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/#:~:text=There%20isn't%20a%20way,Done. */
+
 .siteMaintenenceContainer {
-    border-bottom: black solid 1px;
-    margin: 20px;
-    font-size: 0.8rem;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+    padding: 20px;
+   
+   
+    
+
 }
 
 .CommunityContainer {
-    border-bottom: black solid 1px;
-    margin: 20px;
-    font-size: 0.8rem;
+    grid-row: 2 / 2;
+    grid-column: 1 / 5;
+    padding: 20px;
+    margin-top: -20px;
+   
+
+    
 }
 
 .PrivacyContainer {
-    margin: 20px;
-    font-size: 0.8rem;
+    grid-row: 3 / 3;
+    grid-column: 1 / 5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 
 
+
+
+
+
+
 .trendingContainer img {
-    width: 40px;
-   
+    width: 50px;
 }
 
 .trendingContainer {
     background-color: white;
     border-radius: 20px;
-    grid-column: 90 / 99;
-    grid-row: 6;
+    grid-column: 90 / 98;
+    grid-row: 54;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: -1px 10px 5px -4px rgba(112,111,111,0.44);
 }
+
+.teganContainer, .morganContainer, .kendallContainer, .alexContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    
+}
+
+.trendingContainer img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-left: 30px;
+}
+
+.trendingUser {
+    font-weight: bold;
+}
+
+.Description {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    font-size: 0.9rem;
+    color: var(--descriptionColor);
+}
+
 
